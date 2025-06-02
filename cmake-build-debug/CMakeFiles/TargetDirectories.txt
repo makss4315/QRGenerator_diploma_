@@ -1,0 +1,3 @@
+X:/qr_code/cmake-build-debug/CMakeFiles/qr_handler.dir
+X:/qr_code/cmake-build-debug/CMakeFiles/edit_cache.dir
+X:/qr_code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
