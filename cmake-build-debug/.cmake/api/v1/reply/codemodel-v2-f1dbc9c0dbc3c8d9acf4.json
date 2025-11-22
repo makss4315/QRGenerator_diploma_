@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "qr_handler::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-qr_handler-Debug-547d99f0891f5b6d2cc1.json",
+					"jsonFile" : "target-qr_handler-Debug-d5ec9c9b7589c8eaa356.json",
 					"name" : "qr_handler",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "X:/qr_code/cmake-build-debug",
-		"source" : "X:/qr_code"
+		"build" : "X:/Programing/QRGenerator_diploma_/cmake-build-debug",
+		"source" : "X:/Programing/QRGenerator_diploma_"
 	},
 	"version" : 
 	{

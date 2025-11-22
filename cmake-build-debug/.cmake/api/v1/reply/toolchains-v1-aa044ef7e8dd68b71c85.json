@@ -13,8 +13,8 @@
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : []
 				},
-				"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
-				"version" : "19.44.35207.1"
+				"path" : "X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+				"version" : "19.44.35217.0"
 			},
 			"language" : "C",
 			"sourceFileExtensions" : 
@@ -34,8 +34,8 @@
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : []
 				},
-				"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
-				"version" : "19.44.35207.1"
+				"path" : "X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+				"version" : "19.44.35217.0"
 			},
 			"language" : "CXX",
 			"sourceFileExtensions" : 

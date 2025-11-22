@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 9,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
@@ -43,13 +43,13 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 19,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 14,
+				"line" : 17,
 				"parent" : 0
 			}
 		]
@@ -67,7 +67,7 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "X:/qr_code/qrcodegen"
+					"path" : "X:/Programing/QRGenerator_diploma_/qrcodegen"
 				},
 				{
 					"backtrace" : 4,

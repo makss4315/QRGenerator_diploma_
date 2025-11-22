@@ -17,17 +17,17 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe 
+      Compiler: X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35207.1 for x64
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       CMakeCCompilerId.c
-      Microsoft (R) Incremental Linker Version 14.44.35207.1
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       /out:CMakeCCompilerId.exe 
@@ -39,7 +39,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        X:/qr_code/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.exe
+        X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
@@ -51,7 +51,7 @@ events:
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
-        Note: including file: X:\\qr_code\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
   -
@@ -63,17 +63,17 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe 
+      Compiler: X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35207.1 for x64
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35217 for x64
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       CMakeCXXCompilerId.cpp
-      Microsoft (R) Incremental Linker Version 14.44.35207.1
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       /out:CMakeCXXCompilerId.exe 
@@ -85,7 +85,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
       
       The CXX compiler identification is MSVC, found in:
-        X:/qr_code/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.exe
+        X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.exe
       
   -
     kind: "message-v1"
@@ -97,7 +97,7 @@ events:
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
-        Note: including file: X:\\qr_code\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
   -
@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wgwkal"
-      binary: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wgwkal"
+      source: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5m0zjz"
+      binary: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5m0zjz"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -123,11 +123,28 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wgwkal'
+        Change Dir: 'X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5m0zjz'
         
-        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_8fa81
-        [1/2] C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8fa81.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_8fa81.dir\\ /FS -c "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8fa81.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8fa81.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_8fa81.exe /implib:cmTC_8fa81.lib /pdb:cmTC_8fa81.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_9cf72\\fast
+        	X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_9cf72.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_9cf72.dir\\build
+        Building C object CMakeFiles/cmTC_9cf72.dir/CMakeCCompilerABI.c.obj
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_9cf72.dir\\CMakeCCompilerABI.c.obj.d --working-dir=X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-5m0zjz --filter-prefix="Note: including file: " -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\maks\\AppData\\Local\\Temp\\nmB828.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_9cf72.exe
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9cf72.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_9cf72.dir\\objects1.rsp @C:\\Users\\maks\\AppData\\Local\\Temp\\nmB8E4.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_9cf72.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_9cf72.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_9cf72.dir/manifest.res CMakeFiles\\cmTC_9cf72.dir/manifest.rc
+        LINK Pass 1:
+        X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_9cf72.dir\\objects1.rsp /out:cmTC_9cf72.exe /implib:cmTC_9cf72.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-5m0zjz\\cmTC_9cf72.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9cf72.dir/intermediate.manifest CMakeFiles\\cmTC_9cf72.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_9cf72.dir/intermediate.manifest /out:CMakeFiles\\cmTC_9cf72.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_9cf72.dir/manifest.res CMakeFiles\\cmTC_9cf72.dir/manifest.rc
+        FINAL LINK:
+        X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_9cf72.dir\\objects1.rsp /out:cmTC_9cf72.exe /implib:cmTC_9cf72.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-5m0zjz\\cmTC_9cf72.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9cf72.dir/intermediate.manifest CMakeFiles\\cmTC_9cf72.dir/manifest.res
         
       exitCode: 0
   -
@@ -140,7 +157,7 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': C:/PROGRA~2/MICROS~3/2022/BUILDT~1/VC/Tools/MSVC/1444~1.352/bin/Hostx64/x64/link.exe
+        linker tool for 'C': X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -155,8 +172,8 @@ events:
       - "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the C compiler's linker: "C:/PROGRA~2/MICROS~3/2022/BUILDT~1/VC/Tools/MSVC/1444~1.352/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.44.35207.1
+      Running the C compiler's linker: "X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -167,8 +184,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f44mll"
-      binary: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f44mll"
+      source: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uzder4"
+      binary: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uzder4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -182,11 +199,28 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-f44mll'
+        Change Dir: 'X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uzder4'
         
-        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_2bd7b
-        [1/2] C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2bd7b.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_2bd7b.dir\\ /FS -c "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2bd7b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2bd7b.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_2bd7b.exe /implib:cmTC_2bd7b.lib /pdb:cmTC_2bd7b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_cc77f\\fast
+        	X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_cc77f.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_cc77f.dir\\build
+        Building CXX object CMakeFiles/cmTC_cc77f.dir/CMakeCXXCompilerABI.cpp.obj
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_cc77f.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-uzder4 --filter-prefix="Note: including file: " -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\maks\\AppData\\Local\\Temp\\nmBE90.tmp
+        CMakeCXXCompilerABI.cpp
+        Linking CXX executable cmTC_cc77f.exe
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_cc77f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_cc77f.dir\\objects1.rsp @C:\\Users\\maks\\AppData\\Local\\Temp\\nmBF3D.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_cc77f.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_cc77f.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_cc77f.dir/manifest.res CMakeFiles\\cmTC_cc77f.dir/manifest.rc
+        LINK Pass 1:
+        X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_cc77f.dir\\objects1.rsp /out:cmTC_cc77f.exe /implib:cmTC_cc77f.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-uzder4\\cmTC_cc77f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_cc77f.dir/intermediate.manifest CMakeFiles\\cmTC_cc77f.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_cc77f.dir/intermediate.manifest /out:CMakeFiles\\cmTC_cc77f.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_cc77f.dir/manifest.res CMakeFiles\\cmTC_cc77f.dir/manifest.rc
+        FINAL LINK:
+        X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_cc77f.dir\\objects1.rsp /out:cmTC_cc77f.exe /implib:cmTC_cc77f.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-uzder4\\cmTC_cc77f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_cc77f.dir/intermediate.manifest CMakeFiles\\cmTC_cc77f.dir/manifest.res
         
       exitCode: 0
   -
@@ -199,7 +233,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': C:/PROGRA~2/MICROS~3/2022/BUILDT~1/VC/Tools/MSVC/1444~1.352/bin/Hostx64/x64/link.exe
+        linker tool for 'CXX': X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -214,8 +248,8 @@ events:
       - "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "C:/PROGRA~2/MICROS~3/2022/BUILDT~1/VC/Tools/MSVC/1444~1.352/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.44.35207.1
+      Running the CXX compiler's linker: "X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35217.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -236,12 +270,12 @@ events:
       - "X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake:126 (include)"
       - "X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv/vcpkg-cmake-wrapper.cmake:3 (_find_package)"
       - "X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake:847 (include)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bqlgl2"
-      binary: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bqlgl2"
+      source: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tzo29a"
+      binary: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tzo29a"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -254,16 +288,20 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bqlgl2'
+        Change Dir: 'X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tzo29a'
         
-        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_891b9
-        [1/2] C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_891b9.dir\\src.c.obj /FdCMakeFiles\\cmTC_891b9.dir\\ /FS -c X:\\qr_code\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-bqlgl2\\src.c
-        FAILED: CMakeFiles/cmTC_891b9.dir/src.c.obj 
-        C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_891b9.dir\\src.c.obj /FdCMakeFiles\\cmTC_891b9.dir\\ /FS -c X:\\qr_code\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-bqlgl2\\src.c
-        X:\\qr_code\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-bqlgl2\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
-        ninja: build stopped: subcommand failed.
+        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_30fb9\\fast
+        	X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_30fb9.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_30fb9.dir\\build
+        Building C object CMakeFiles/cmTC_30fb9.dir/src.c.obj
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_30fb9.dir\\src.c.obj.d --working-dir=X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-tzo29a --filter-prefix="Note: including file: " -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC2B7.tmp
+        src.c
+        X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-tzo29a\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        NMAKE : fatal error U1077: '"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_30fb9.dir\\src.c.obj.d --working-dir=X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-tzo29a --filter-prefix="Note: including file: " -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC2B7.tmp' : return code '0x2'
+        Stop.
+        NMAKE : fatal error U1077: 'X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_30fb9.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_30fb9.dir\\build' : return code '0x2'
+        Stop.
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
@@ -282,12 +320,12 @@ events:
       - "X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake:126 (include)"
       - "X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv/vcpkg-cmake-wrapper.cmake:3 (_find_package)"
       - "X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake:847 (include)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t99hf7"
-      binary: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t99hf7"
+      source: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4qnr8n"
+      binary: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4qnr8n"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -300,18 +338,30 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t99hf7'
+        Change Dir: 'X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4qnr8n'
         
-        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_7e1f9
-        [1/2] C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_7e1f9.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_7e1f9.dir\\ /FS -c X:\\qr_code\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t99hf7\\CheckFunctionExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7e1f9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7e1f9.dir\\CheckFunctionExists.c.obj  /out:cmTC_7e1f9.exe /implib:cmTC_7e1f9.lib /pdb:cmTC_7e1f9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_7e1f9.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7e1f9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7e1f9.dir\\CheckFunctionExists.c.obj  /out:cmTC_7e1f9.exe /implib:cmTC_7e1f9.lib /pdb:cmTC_7e1f9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7e1f9.dir\\CheckFunctionExists.c.obj /out:cmTC_7e1f9.exe /implib:cmTC_7e1f9.lib /pdb:cmTC_7e1f9.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7e1f9.dir/intermediate.manifest CMakeFiles\\cmTC_7e1f9.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib'\x0d
-        ninja: build stopped: subcommand failed.
+        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2c791\\fast
+        	X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_2c791.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2c791.dir\\build
+        Building C object CMakeFiles/cmTC_2c791.dir/CheckFunctionExists.c.obj
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2c791.dir\\CheckFunctionExists.c.obj.d --working-dir=X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4qnr8n --filter-prefix="Note: including file: " -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC44D.tmp
+        CheckFunctionExists.c
+        Linking C executable cmTC_2c791.exe
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2c791.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2c791.dir\\objects1.rsp @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC4DB.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_2c791.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_2c791.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2c791.dir/manifest.res CMakeFiles\\cmTC_2c791.dir/manifest.rc
+        LINK Pass 1:
+        X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2c791.dir\\objects1.rsp /out:cmTC_2c791.exe /implib:cmTC_2c791.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4qnr8n\\cmTC_2c791.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2c791.dir/intermediate.manifest CMakeFiles\\cmTC_2c791.dir/manifest.res
+        LINK Pass 1: command "X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2c791.dir\\objects1.rsp /out:cmTC_2c791.exe /implib:cmTC_2c791.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4qnr8n\\cmTC_2c791.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2c791.dir/intermediate.manifest CMakeFiles\\cmTC_2c791.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib'
+        NMAKE : fatal error U1077: '"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2c791.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2c791.dir\\objects1.rsp @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC4DB.tmp' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: 'X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_2c791.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2c791.dir\\build' : return code '0x2'
+        Stop.
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
@@ -330,12 +380,12 @@ events:
       - "X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake:126 (include)"
       - "X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv/vcpkg-cmake-wrapper.cmake:3 (_find_package)"
       - "X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake:847 (include)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0m5pk1"
-      binary: "X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0m5pk1"
+      source: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0n1s6w"
+      binary: "X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0n1s6w"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -348,16 +398,28 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'X:/qr_code/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0m5pk1'
+        Change Dir: 'X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0n1s6w'
         
-        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_dfefd
-        [1/2] C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_dfefd.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_dfefd.dir\\ /FS -c X:\\qr_code\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-0m5pk1\\CheckFunctionExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_dfefd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dfefd.dir\\CheckFunctionExists.c.obj  /out:cmTC_dfefd.exe /implib:cmTC_dfefd.lib /pdb:cmTC_dfefd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_dfefd.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_dfefd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dfefd.dir\\CheckFunctionExists.c.obj  /out:cmTC_dfefd.exe /implib:cmTC_dfefd.lib /pdb:cmTC_dfefd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~3\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dfefd.dir\\CheckFunctionExists.c.obj /out:cmTC_dfefd.exe /implib:cmTC_dfefd.lib /pdb:cmTC_dfefd.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_dfefd.dir/intermediate.manifest CMakeFiles\\cmTC_dfefd.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib'\x0d
-        ninja: build stopped: subcommand failed.
+        Run Build Command(s): "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_95beb\\fast
+        	X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_95beb.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_95beb.dir\\build
+        Building C object CMakeFiles/cmTC_95beb.dir/CheckFunctionExists.c.obj
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_95beb.dir\\CheckFunctionExists.c.obj.d --working-dir=X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-0n1s6w --filter-prefix="Note: including file: " -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC680.tmp
+        CheckFunctionExists.c
+        Linking C executable cmTC_95beb.exe
+        	"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_95beb.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_95beb.dir\\objects1.rsp @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC6FE.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_95beb.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_95beb.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_95beb.dir/manifest.res CMakeFiles\\cmTC_95beb.dir/manifest.rc
+        LINK Pass 1:
+        X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_95beb.dir\\objects1.rsp /out:cmTC_95beb.exe /implib:cmTC_95beb.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-0n1s6w\\cmTC_95beb.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_95beb.dir/intermediate.manifest CMakeFiles\\cmTC_95beb.dir/manifest.res
+        LINK Pass 1: command "X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_95beb.dir\\objects1.rsp /out:cmTC_95beb.exe /implib:cmTC_95beb.lib /pdb:X:\\Programing\\QRGenerator_diploma_\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-0n1s6w\\cmTC_95beb.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_95beb.dir/intermediate.manifest CMakeFiles\\cmTC_95beb.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib'
+        NMAKE : fatal error U1077: '"X:\\Leonchik\\CLion 2024.3.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_95beb.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests -- X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_95beb.dir\\objects1.rsp @C:\\Users\\maks\\AppData\\Local\\Temp\\nmC6FE.tmp' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: 'X:\\hyinia_dla_msvs\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\nmake.exe  -f CMakeFiles\\cmTC_95beb.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_95beb.dir\\build' : return code '0x2'
+        Stop.
         
-      exitCode: 1
+      exitCode: 2
 ...

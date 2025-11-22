@@ -1,4 +1,16 @@
-"X:\Leonchik\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=X:/Leonchik/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -DCMAKE_TOOLCHAIN_FILE=X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S X:\qr_code -B X:\qr_code\cmake-build-debug
+"X:\Leonchik\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake -G "NMake Makefiles" -S X:\Programing\QRGenerator_diploma_ -B X:\Programing\QRGenerator_diploma_\cmake-build-debug
+-- The C compiler identification is MSVC 19.44.35217.0
+-- The CXX compiler identification is MSVC 19.44.35217.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 CMake Warning (dev) at X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv/vcpkg-cmake-wrapper.cmake:3 (_find_package):
   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
@@ -11,9 +23,19 @@ CMake Warning (dev) at X:/Git_Repo/vcpkg/installed/x64-windows/share/opencv/vcpk
   For compatibility, CMake is ignoring the variable.
 Call Stack (most recent call first):
   X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake:847 (include)
-  CMakeLists.txt:7 (find_package)
+  CMakeLists.txt:10 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Configuring done (0.4s)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Found Protobuf: X:/Git_Repo/vcpkg/installed/x64-windows/tools/protobuf/protoc.exe (found version "29.3.0")
+-- Found TIFF: optimized;X:/Git_Repo/vcpkg/installed/x64-windows/lib/tiff.lib;debug;X:/Git_Repo/vcpkg/installed/x64-windows/debug/lib/tiffd.lib (found version "4.7.0")
+-- Found OpenCV: X:/Git_Repo/vcpkg/installed/x64-windows (found version "4.11.0")
+-- Configuring done (5.7s)
 -- Generating done (0.0s)
--- Build files have been written to: X:/qr_code/cmake-build-debug
+-- Build files have been written to: X:/Programing/QRGenerator_diploma_/cmake-build-debug

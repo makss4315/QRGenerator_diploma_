@@ -4,6 +4,9 @@ project(QRGenerator)
 set(CMAKE_CXX_STANDARD 17)
 
 
+set(CMAKE_TOOLCHAIN_FILE "X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+
+
 find_package(OpenCV REQUIRED)
 
 add_executable(qr_handler

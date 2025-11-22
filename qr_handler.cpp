@@ -6,7 +6,7 @@ using namespace std;
 using namespace qrcodegen;
 
 int main() {
-    string text = "https://github.com/makss4315";
+    string text = "https://www.youtube.com/watch?v=3iTL04GiNrY";
 
 
     QrCode qr = QrCode::encodeText(text.c_str(), QrCode::Ecc::LOW);
