@@ -53,15 +53,32 @@ CMAKE_BINARY_DIR = X:\Programing\QRGenerator_diploma_\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles\qr_handler.dir\all
+all: UI\all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: UI\preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles\qr_handler.dir\clean
+clean: UI\clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory UI
+
+# Recursive "all" directory target.
+UI\all: UI\CMakeFiles\QRGenerator.dir\all
+.PHONY : UI\all
+
+# Recursive "preinstall" directory target.
+UI\preinstall:
+.PHONY : UI\preinstall
+
+# Recursive "clean" directory target.
+UI\clean: UI\CMakeFiles\QRGenerator.dir\clean
+.PHONY : UI\clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/qr_handler.dir
@@ -70,7 +87,7 @@ clean: CMakeFiles\qr_handler.dir\clean
 CMakeFiles\qr_handler.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target qr_handler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles --progress-num=3,4,5 "Built target qr_handler"
 .PHONY : CMakeFiles\qr_handler.dir\all
 
 # Build rule for subdir invocation for target.
@@ -88,6 +105,32 @@ qr_handler: CMakeFiles\qr_handler.dir\rule
 CMakeFiles\qr_handler.dir\clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\clean
 .PHONY : CMakeFiles\qr_handler.dir\clean
+
+#=============================================================================
+# Target rules for target UI/CMakeFiles/QRGenerator.dir
+
+# All Build rule for target.
+UI\CMakeFiles\QRGenerator.dir\all:
+	$(MAKE) $(MAKESILENT) -f UI\CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) UI\CMakeFiles\QRGenerator.dir\depend
+	$(MAKE) $(MAKESILENT) -f UI\CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) UI\CMakeFiles\QRGenerator.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target QRGenerator"
+.PHONY : UI\CMakeFiles\QRGenerator.dir\all
+
+# Build rule for subdir invocation for target.
+UI\CMakeFiles\QRGenerator.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) UI\CMakeFiles\QRGenerator.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles 0
+.PHONY : UI\CMakeFiles\QRGenerator.dir\rule
+
+# Convenience name for target.
+QRGenerator: UI\CMakeFiles\QRGenerator.dir\rule
+.PHONY : QRGenerator
+
+# clean rule for target.
+UI\CMakeFiles\QRGenerator.dir\clean:
+	$(MAKE) $(MAKESILENT) -f UI\CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) UI\CMakeFiles\QRGenerator.dir\clean
+.PHONY : UI\CMakeFiles\QRGenerator.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

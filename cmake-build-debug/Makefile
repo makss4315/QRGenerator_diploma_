@@ -118,53 +118,66 @@ qr_handler\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\build
 .PHONY : qr_handler\fast
 
-qr_handler.obj: qr_handler.cpp.obj
-.PHONY : qr_handler.obj
+#=============================================================================
+# Target rules for targets named QRGenerator
+
+# Build rule for target.
+QRGenerator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) QRGenerator
+.PHONY : QRGenerator
+
+# fast build rule for target.
+QRGenerator\fast:
+	$(MAKE) $(MAKESILENT) -f UI\CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) UI\CMakeFiles\QRGenerator.dir\build
+.PHONY : QRGenerator\fast
+
+core\qr_handler.obj: core\qr_handler.cpp.obj
+.PHONY : core\qr_handler.obj
 
 # target to build an object file
-qr_handler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\qr_handler.cpp.obj
-.PHONY : qr_handler.cpp.obj
+core\qr_handler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj
+.PHONY : core\qr_handler.cpp.obj
 
-qr_handler.i: qr_handler.cpp.i
-.PHONY : qr_handler.i
+core\qr_handler.i: core\qr_handler.cpp.i
+.PHONY : core\qr_handler.i
 
 # target to preprocess a source file
-qr_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\qr_handler.cpp.i
-.PHONY : qr_handler.cpp.i
+core\qr_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qr_handler.cpp.i
+.PHONY : core\qr_handler.cpp.i
 
-qr_handler.s: qr_handler.cpp.s
-.PHONY : qr_handler.s
+core\qr_handler.s: core\qr_handler.cpp.s
+.PHONY : core\qr_handler.s
 
 # target to generate assembly for a file
-qr_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\qr_handler.cpp.s
-.PHONY : qr_handler.cpp.s
+core\qr_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qr_handler.cpp.s
+.PHONY : core\qr_handler.cpp.s
 
-qrcodegen\qrcodegen.obj: qrcodegen\qrcodegen.cpp.obj
-.PHONY : qrcodegen\qrcodegen.obj
+core\qrcodegen\qrcodegen.obj: core\qrcodegen\qrcodegen.cpp.obj
+.PHONY : core\qrcodegen\qrcodegen.obj
 
 # target to build an object file
-qrcodegen\qrcodegen.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj
-.PHONY : qrcodegen\qrcodegen.cpp.obj
+core\qrcodegen\qrcodegen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj
+.PHONY : core\qrcodegen\qrcodegen.cpp.obj
 
-qrcodegen\qrcodegen.i: qrcodegen\qrcodegen.cpp.i
-.PHONY : qrcodegen\qrcodegen.i
+core\qrcodegen\qrcodegen.i: core\qrcodegen\qrcodegen.cpp.i
+.PHONY : core\qrcodegen\qrcodegen.i
 
 # target to preprocess a source file
-qrcodegen\qrcodegen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.i
-.PHONY : qrcodegen\qrcodegen.cpp.i
+core\qrcodegen\qrcodegen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.i
+.PHONY : core\qrcodegen\qrcodegen.cpp.i
 
-qrcodegen\qrcodegen.s: qrcodegen\qrcodegen.cpp.s
-.PHONY : qrcodegen\qrcodegen.s
+core\qrcodegen\qrcodegen.s: core\qrcodegen\qrcodegen.cpp.s
+.PHONY : core\qrcodegen\qrcodegen.s
 
 # target to generate assembly for a file
-qrcodegen\qrcodegen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.s
-.PHONY : qrcodegen\qrcodegen.cpp.s
+core\qrcodegen\qrcodegen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.s
+.PHONY : core\qrcodegen\qrcodegen.cpp.s
 
 # Help Target
 help:
@@ -174,13 +187,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... QRGenerator
 	@echo ... qr_handler
-	@echo ... qr_handler.obj
-	@echo ... qr_handler.i
-	@echo ... qr_handler.s
-	@echo ... qrcodegen/qrcodegen.obj
-	@echo ... qrcodegen/qrcodegen.i
-	@echo ... qrcodegen/qrcodegen.s
+	@echo ... core/qr_handler.obj
+	@echo ... core/qr_handler.i
+	@echo ... core/qr_handler.s
+	@echo ... core/qrcodegen/qrcodegen.obj
+	@echo ... core/qrcodegen/qrcodegen.i
+	@echo ... core/qrcodegen/qrcodegen.s
 .PHONY : help
 
 

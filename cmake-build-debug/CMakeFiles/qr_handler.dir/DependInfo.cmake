@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "X:/Programing/QRGenerator_diploma_/qr_handler.cpp" "CMakeFiles/qr_handler.dir/qr_handler.cpp.obj" "msvc" "CMakeFiles/qr_handler.dir/qr_handler.cpp.obj.d"
-  "X:/Programing/QRGenerator_diploma_/qrcodegen/qrcodegen.cpp" "CMakeFiles/qr_handler.dir/qrcodegen/qrcodegen.cpp.obj" "msvc" "CMakeFiles/qr_handler.dir/qrcodegen/qrcodegen.cpp.obj.d"
+  "X:/Programing/QRGenerator_diploma_/core/qr_handler.cpp" "CMakeFiles/qr_handler.dir/core/qr_handler.cpp.obj" "msvc" "CMakeFiles/qr_handler.dir/core/qr_handler.cpp.obj.d"
+  "X:/Programing/QRGenerator_diploma_/core/qrcodegen/qrcodegen.cpp" "CMakeFiles/qr_handler.dir/core/qrcodegen/qrcodegen.cpp.obj" "msvc" "CMakeFiles/qr_handler.dir/core/qrcodegen/qrcodegen.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -58,56 +58,56 @@ include CMakeFiles\qr_handler.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\qr_handler.dir\flags.make
 
-CMakeFiles\qr_handler.dir\qr_handler.cpp.obj: CMakeFiles\qr_handler.dir\flags.make
-CMakeFiles\qr_handler.dir\qr_handler.cpp.obj: X:\Programing\QRGenerator_diploma_\qr_handler.cpp
-CMakeFiles\qr_handler.dir\qr_handler.cpp.obj: CMakeFiles\qr_handler.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/qr_handler.dir/qr_handler.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\qr_handler.dir\qr_handler.cpp.obj.d --working-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug --filter-prefix="Note: including file: " -- X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\qr_handler.dir\qr_handler.cpp.obj /FdCMakeFiles\qr_handler.dir\ /FS -c X:\Programing\QRGenerator_diploma_\qr_handler.cpp
+CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: CMakeFiles\qr_handler.dir\flags.make
+CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Programing\QRGenerator_diploma_\core\qr_handler.cpp
+CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: CMakeFiles\qr_handler.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/qr_handler.dir/core/qr_handler.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj.d --working-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug --filter-prefix="Note: including file: " -- X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj /FdCMakeFiles\qr_handler.dir\ /FS -c X:\Programing\QRGenerator_diploma_\core\qr_handler.cpp
 <<
 
-CMakeFiles\qr_handler.dir\qr_handler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qr_handler.dir/qr_handler.cpp.i"
-	X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe > CMakeFiles\qr_handler.dir\qr_handler.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\Programing\QRGenerator_diploma_\qr_handler.cpp
+CMakeFiles\qr_handler.dir\core\qr_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qr_handler.dir/core/qr_handler.cpp.i"
+	X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe > CMakeFiles\qr_handler.dir\core\qr_handler.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\Programing\QRGenerator_diploma_\core\qr_handler.cpp
 <<
 
-CMakeFiles\qr_handler.dir\qr_handler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qr_handler.dir/qr_handler.cpp.s"
+CMakeFiles\qr_handler.dir\core\qr_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qr_handler.dir/core/qr_handler.cpp.s"
 	X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\qr_handler.dir\qr_handler.cpp.s /c X:\Programing\QRGenerator_diploma_\qr_handler.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\qr_handler.dir\core\qr_handler.cpp.s /c X:\Programing\QRGenerator_diploma_\core\qr_handler.cpp
 <<
 
-CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj: CMakeFiles\qr_handler.dir\flags.make
-CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj: X:\Programing\QRGenerator_diploma_\qrcodegen\qrcodegen.cpp
-CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj: CMakeFiles\qr_handler.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qr_handler.dir/qrcodegen/qrcodegen.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj.d --working-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug --filter-prefix="Note: including file: " -- X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj /FdCMakeFiles\qr_handler.dir\ /FS -c X:\Programing\QRGenerator_diploma_\qrcodegen\qrcodegen.cpp
+CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj: CMakeFiles\qr_handler.dir\flags.make
+CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj: X:\Programing\QRGenerator_diploma_\core\qrcodegen\qrcodegen.cpp
+CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj: CMakeFiles\qr_handler.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qr_handler.dir/core/qrcodegen/qrcodegen.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj.d --working-dir=X:\Programing\QRGenerator_diploma_\cmake-build-debug --filter-prefix="Note: including file: " -- X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj /FdCMakeFiles\qr_handler.dir\ /FS -c X:\Programing\QRGenerator_diploma_\core\qrcodegen\qrcodegen.cpp
 <<
 
-CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qr_handler.dir/qrcodegen/qrcodegen.cpp.i"
-	X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe > CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\Programing\QRGenerator_diploma_\qrcodegen\qrcodegen.cpp
+CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qr_handler.dir/core/qrcodegen/qrcodegen.cpp.i"
+	X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe > CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\Programing\QRGenerator_diploma_\core\qrcodegen\qrcodegen.cpp
 <<
 
-CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qr_handler.dir/qrcodegen/qrcodegen.cpp.s"
+CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qr_handler.dir/core/qrcodegen/qrcodegen.cpp.s"
 	X:\hyinia_dla_msvs\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.s /c X:\Programing\QRGenerator_diploma_\qrcodegen\qrcodegen.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.s /c X:\Programing\QRGenerator_diploma_\core\qrcodegen\qrcodegen.cpp
 <<
 
 # Object files for target qr_handler
 qr_handler_OBJECTS = \
-"CMakeFiles\qr_handler.dir\qr_handler.cpp.obj" \
-"CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj"
+"CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj" \
+"CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj"
 
 # External object files for target qr_handler
 qr_handler_EXTERNAL_OBJECTS =
 
-qr_handler.exe: CMakeFiles\qr_handler.dir\qr_handler.cpp.obj
-qr_handler.exe: CMakeFiles\qr_handler.dir\qrcodegen\qrcodegen.cpp.obj
+qr_handler.exe: CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj
+qr_handler.exe: CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj
 qr_handler.exe: CMakeFiles\qr_handler.dir\build.make
 qr_handler.exe: X:\Git_Repo\vcpkg\installed\x64-windows\debug\lib\opencv_highgui4d.lib
 qr_handler.exe: X:\Git_Repo\vcpkg\installed\x64-windows\debug\lib\opencv_ml4d.lib

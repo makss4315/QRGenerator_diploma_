@@ -4,7 +4,7 @@
 # compile CXX with X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = -IX:\Programing\QRGenerator_diploma_\qrcodegen -external:IX:\Git_Repo\vcpkg\installed\x64-windows\include\opencv4 -external:W0
+CXX_INCLUDES = -IX:\Programing\QRGenerator_diploma_\core\qrcodegen -external:IX:\Git_Repo\vcpkg\installed\x64-windows\include\opencv4 -external:W0
 
 CXX_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
 
