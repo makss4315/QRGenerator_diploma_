@@ -5,9 +5,16 @@
 using namespace std;
 using namespace qrcodegen;
 
-int main() {
-    string text = "ПОМОГИТЕ НАХУЙ";
+string text;
+string SavePath;
+string UserFileName;
 
+int main() {
+
+
+
+    cout<<"Enter text or link : ";
+    cin>>text;
 
     QrCode qr = QrCode::encodeText(text.c_str(), QrCode::Ecc::LOW);
     int size = qr.getSize();
@@ -32,9 +39,14 @@ int main() {
         }
     }
 
-    
-    cv::imwrite("qr_output.png", img);
-    cout << "save as qr_output.png" << endl;
+    cout<<"Pls Enter path to save ur qr code: ";
+    cin >> SavePath;
+    cout<<"Enter FileName :";
+    cin>>UserFileName;
+
+    cv::imwrite(SavePath + "/" + UserFileName + ".png", img);
+    cout << "save as "+UserFileName + " in " +SavePath  << endl;
+   system("pause");
 
     return 0;
 }
