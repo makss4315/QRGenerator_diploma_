@@ -4,7 +4,7 @@
 # compile CXX with X:/hyinia_dla_msvs/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
 CXX_DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
 
-CXX_INCLUDES = -external:IX:\QT\6.10.1\mingw_64\include\QtCore -external:IX:\QT\6.10.1\mingw_64\include -external:IX:\QT\6.10.1\mingw_64\mkspecs\win32-g++ -external:IX:\QT\6.10.1\mingw_64\include\QtGui -external:IX:\QT\6.10.1\mingw_64\include\QtWidgets -external:W0
+CXX_INCLUDES = -external:IX:\QT\6.10.1\mingw_64\include\QtWidgets -external:IX:\QT\6.10.1\mingw_64\include -external:IX:\QT\6.10.1\mingw_64\include\QtCore -external:IX:\QT\6.10.1\mingw_64\mkspecs\win32-g++ -external:IX:\QT\6.10.1\mingw_64\include\QtGui -external:W0
 
 CXX_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
 
