@@ -285,7 +285,8 @@ CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Git_Repo\vcpkg\installed\x
 CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Git_Repo\vcpkg\installed\x64-windows\include\opencv4\opencv2\video\tracking.hpp
 CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Git_Repo\vcpkg\installed\x64-windows\include\opencv4\opencv2\video\background_segm.hpp
 CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Programing\QRGenerator_diploma_\core\qrcodegen\qrcodegen.hpp
-CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Programing\QRGenerator_diploma_\core\qrcodegen\qr_handler.h
+CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Programing\QRGenerator_diploma_\core\qrcodegen\UserInputs.h
+CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj: X:\Programing\QRGenerator_diploma_\core\qrcodegen\UserInputs.cpp
 
 
 CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj: X:\Programing\QRGenerator_diploma_\core\qrcodegen\qrcodegen.cpp
@@ -955,7 +956,9 @@ X:\Git_Repo\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail
 
 X:\Git_Repo\vcpkg\installed\x64-windows\include\opencv4\opencv2\video\background_segm.hpp:
 
-X:\Programing\QRGenerator_diploma_\core\qrcodegen\qr_handler.h:
+X:\Programing\QRGenerator_diploma_\core\qrcodegen\UserInputs.h:
+
+X:\Programing\QRGenerator_diploma_\core\qrcodegen\UserInputs.cpp:
 
 X:\Programing\QRGenerator_diploma_\core\qrcodegen\qrcodegen.cpp:
 

@@ -1,12 +1,13 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include "qrcodegen/qrcodegen.hpp"
-#include "qrcodegen/qr_handler.h"
+#include "qrcodegen/UserInputs.h"
+#include "qrcodegen/UserInputs.cpp"
 
 using namespace std;
 using namespace qrcodegen;
 
-std::string UserInputs::userSavePath = "";
+
 
 string text;
 //string SavePath;
@@ -42,14 +43,13 @@ int main() {
         }
     }
 
-    cout<<"Pls Enter path to save ur qr code: ";
-    std::getline(std::cin, UserInputs::userSavePath);
+    UserInputs::PathInit();
 
     cout<<"Enter FileName :";
     cin>>UserFileName;
 
-    cv::imwrite(UserInputs::userSavePath + "/" + UserFileName + ".png", img);
-    cout << "save as "+UserFileName + " in " + UserInputs::userSavePath  << endl;
+    cv::imwrite(UserInputs::GetUserPathInput()+ "/" + UserFileName + ".png", img);
+    cout << "save as "+UserFileName + " in " + UserInputs::GetUserPathInput()  << endl;
    system("pause");
 
     return 0;

@@ -281,3 +281,5 @@ X:/Git_Repo/vcpkg/installed/x64-windows/include/opencv4/opencv2/video.hpp
 X:/Git_Repo/vcpkg/installed/x64-windows/include/opencv4/opencv2/video/tracking.hpp
 X:/Git_Repo/vcpkg/installed/x64-windows/include/opencv4/opencv2/video/background_segm.hpp
 X:/Programing/QRGenerator_diploma_/core/qrcodegen/qrcodegen.hpp
+X:/Programing/QRGenerator_diploma_/core/qrcodegen/UserInputs.h
+X:/Programing/QRGenerator_diploma_/core/qrcodegen/UserInputs.cpp
