@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "mainwindow.ui"
+#include "qrcodegen/UserInputs.h""
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -8,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 }
 
-Qstring
+Qstring PathToImage = QString::fromStdString(UserInputs::GetUserPathInput()+ "/" + UserInputs::GetUserFileName() + ".png");
 
 MainWindow::~MainWindow()
 {
