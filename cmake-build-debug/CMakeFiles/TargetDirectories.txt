@@ -1,6 +1,5 @@
-X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/qr_handler.dir
+X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/QRGenerator.dir
 X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/edit_cache.dir
 X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-X:/Programing/QRGenerator_diploma_/cmake-build-debug/UI/CMakeFiles/QRGenerator.dir
-X:/Programing/QRGenerator_diploma_/cmake-build-debug/UI/CMakeFiles/edit_cache.dir
-X:/Programing/QRGenerator_diploma_/cmake-build-debug/UI/CMakeFiles/rebuild_cache.dir
+X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/QRGenerator_autogen_timestamp_deps.dir
+X:/Programing/QRGenerator_diploma_/cmake-build-debug/CMakeFiles/QRGenerator_autogen.dir

@@ -74,7 +74,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake"
   "X:/Leonchik/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake"
   "X:/Programing/QRGenerator_diploma_/CMakeLists.txt"
-  "X:/Programing/QRGenerator_diploma_/UI/CMakeLists.txt"
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeRCCompiler.cmake"
@@ -235,14 +234,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/QRGenerator_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "UI/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/qr_handler.dir/DependInfo.cmake"
-  "UI/CMakeFiles/QRGenerator.dir/DependInfo.cmake"
+  "CMakeFiles/QRGenerator.dir/DependInfo.cmake"
+  "CMakeFiles/QRGenerator_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/QRGenerator_autogen.dir/DependInfo.cmake"
   )

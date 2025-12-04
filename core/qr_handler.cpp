@@ -2,7 +2,7 @@
 #include <opencv2/opencv.hpp>
 #include "qrcodegen/qrcodegen.hpp"
 #include "qrcodegen/UserInputs.h"
-#include "qrcodegen/UserInputs.cpp"
+
 
 using namespace std;
 using namespace qrcodegen;

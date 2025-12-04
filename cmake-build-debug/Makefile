@@ -106,19 +106,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named qr_handler
-
-# Build rule for target.
-qr_handler: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) qr_handler
-.PHONY : qr_handler
-
-# fast build rule for target.
-qr_handler\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\build
-.PHONY : qr_handler\fast
-
-#=============================================================================
 # Target rules for targets named QRGenerator
 
 # Build rule for target.
@@ -128,15 +115,113 @@ QRGenerator: cmake_check_build_system
 
 # fast build rule for target.
 QRGenerator\fast:
-	$(MAKE) $(MAKESILENT) -f UI\CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) UI\CMakeFiles\QRGenerator.dir\build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\build
 .PHONY : QRGenerator\fast
+
+#=============================================================================
+# Target rules for targets named QRGenerator_autogen_timestamp_deps
+
+# Build rule for target.
+QRGenerator_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) QRGenerator_autogen_timestamp_deps
+.PHONY : QRGenerator_autogen_timestamp_deps
+
+# fast build rule for target.
+QRGenerator_autogen_timestamp_deps\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator_autogen_timestamp_deps.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator_autogen_timestamp_deps.dir\build
+.PHONY : QRGenerator_autogen_timestamp_deps\fast
+
+#=============================================================================
+# Target rules for targets named QRGenerator_autogen
+
+# Build rule for target.
+QRGenerator_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) QRGenerator_autogen
+.PHONY : QRGenerator_autogen
+
+# fast build rule for target.
+QRGenerator_autogen\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator_autogen.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator_autogen.dir\build
+.PHONY : QRGenerator_autogen\fast
+
+QRGenerator_autogen\mocs_compilation.obj: QRGenerator_autogen\mocs_compilation.cpp.obj
+.PHONY : QRGenerator_autogen\mocs_compilation.obj
+
+# target to build an object file
+QRGenerator_autogen\mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\QRGenerator_autogen\mocs_compilation.cpp.obj
+.PHONY : QRGenerator_autogen\mocs_compilation.cpp.obj
+
+QRGenerator_autogen\mocs_compilation.i: QRGenerator_autogen\mocs_compilation.cpp.i
+.PHONY : QRGenerator_autogen\mocs_compilation.i
+
+# target to preprocess a source file
+QRGenerator_autogen\mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\QRGenerator_autogen\mocs_compilation.cpp.i
+.PHONY : QRGenerator_autogen\mocs_compilation.cpp.i
+
+QRGenerator_autogen\mocs_compilation.s: QRGenerator_autogen\mocs_compilation.cpp.s
+.PHONY : QRGenerator_autogen\mocs_compilation.s
+
+# target to generate assembly for a file
+QRGenerator_autogen\mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\QRGenerator_autogen\mocs_compilation.cpp.s
+.PHONY : QRGenerator_autogen\mocs_compilation.cpp.s
+
+UI\main.obj: UI\main.cpp.obj
+.PHONY : UI\main.obj
+
+# target to build an object file
+UI\main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\UI\main.cpp.obj
+.PHONY : UI\main.cpp.obj
+
+UI\main.i: UI\main.cpp.i
+.PHONY : UI\main.i
+
+# target to preprocess a source file
+UI\main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\UI\main.cpp.i
+.PHONY : UI\main.cpp.i
+
+UI\main.s: UI\main.cpp.s
+.PHONY : UI\main.s
+
+# target to generate assembly for a file
+UI\main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\UI\main.cpp.s
+.PHONY : UI\main.cpp.s
+
+UI\mainwindow.obj: UI\mainwindow.cpp.obj
+.PHONY : UI\mainwindow.obj
+
+# target to build an object file
+UI\mainwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\UI\mainwindow.cpp.obj
+.PHONY : UI\mainwindow.cpp.obj
+
+UI\mainwindow.i: UI\mainwindow.cpp.i
+.PHONY : UI\mainwindow.i
+
+# target to preprocess a source file
+UI\mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\UI\mainwindow.cpp.i
+.PHONY : UI\mainwindow.cpp.i
+
+UI\mainwindow.s: UI\mainwindow.cpp.s
+.PHONY : UI\mainwindow.s
+
+# target to generate assembly for a file
+UI\mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\UI\mainwindow.cpp.s
+.PHONY : UI\mainwindow.cpp.s
 
 core\qr_handler.obj: core\qr_handler.cpp.obj
 .PHONY : core\qr_handler.obj
 
 # target to build an object file
 core\qr_handler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qr_handler.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qr_handler.cpp.obj
 .PHONY : core\qr_handler.cpp.obj
 
 core\qr_handler.i: core\qr_handler.cpp.i
@@ -144,7 +229,7 @@ core\qr_handler.i: core\qr_handler.cpp.i
 
 # target to preprocess a source file
 core\qr_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qr_handler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qr_handler.cpp.i
 .PHONY : core\qr_handler.cpp.i
 
 core\qr_handler.s: core\qr_handler.cpp.s
@@ -152,15 +237,39 @@ core\qr_handler.s: core\qr_handler.cpp.s
 
 # target to generate assembly for a file
 core\qr_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qr_handler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qr_handler.cpp.s
 .PHONY : core\qr_handler.cpp.s
+
+core\qrcodegen\UserInputs.obj: core\qrcodegen\UserInputs.cpp.obj
+.PHONY : core\qrcodegen\UserInputs.obj
+
+# target to build an object file
+core\qrcodegen\UserInputs.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qrcodegen\UserInputs.cpp.obj
+.PHONY : core\qrcodegen\UserInputs.cpp.obj
+
+core\qrcodegen\UserInputs.i: core\qrcodegen\UserInputs.cpp.i
+.PHONY : core\qrcodegen\UserInputs.i
+
+# target to preprocess a source file
+core\qrcodegen\UserInputs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qrcodegen\UserInputs.cpp.i
+.PHONY : core\qrcodegen\UserInputs.cpp.i
+
+core\qrcodegen\UserInputs.s: core\qrcodegen\UserInputs.cpp.s
+.PHONY : core\qrcodegen\UserInputs.s
+
+# target to generate assembly for a file
+core\qrcodegen\UserInputs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qrcodegen\UserInputs.cpp.s
+.PHONY : core\qrcodegen\UserInputs.cpp.s
 
 core\qrcodegen\qrcodegen.obj: core\qrcodegen\qrcodegen.cpp.obj
 .PHONY : core\qrcodegen\qrcodegen.obj
 
 # target to build an object file
 core\qrcodegen\qrcodegen.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qrcodegen\qrcodegen.cpp.obj
 .PHONY : core\qrcodegen\qrcodegen.cpp.obj
 
 core\qrcodegen\qrcodegen.i: core\qrcodegen\qrcodegen.cpp.i
@@ -168,7 +277,7 @@ core\qrcodegen\qrcodegen.i: core\qrcodegen\qrcodegen.cpp.i
 
 # target to preprocess a source file
 core\qrcodegen\qrcodegen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qrcodegen\qrcodegen.cpp.i
 .PHONY : core\qrcodegen\qrcodegen.cpp.i
 
 core\qrcodegen\qrcodegen.s: core\qrcodegen\qrcodegen.cpp.s
@@ -176,7 +285,7 @@ core\qrcodegen\qrcodegen.s: core\qrcodegen\qrcodegen.cpp.s
 
 # target to generate assembly for a file
 core\qrcodegen\qrcodegen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qr_handler.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\qr_handler.dir\core\qrcodegen\qrcodegen.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRGenerator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\QRGenerator.dir\core\qrcodegen\qrcodegen.cpp.s
 .PHONY : core\qrcodegen\qrcodegen.cpp.s
 
 # Help Target
@@ -187,11 +296,24 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... QRGenerator_autogen
+	@echo ... QRGenerator_autogen_timestamp_deps
 	@echo ... QRGenerator
-	@echo ... qr_handler
+	@echo ... QRGenerator_autogen/mocs_compilation.obj
+	@echo ... QRGenerator_autogen/mocs_compilation.i
+	@echo ... QRGenerator_autogen/mocs_compilation.s
+	@echo ... UI/main.obj
+	@echo ... UI/main.i
+	@echo ... UI/main.s
+	@echo ... UI/mainwindow.obj
+	@echo ... UI/mainwindow.i
+	@echo ... UI/mainwindow.s
 	@echo ... core/qr_handler.obj
 	@echo ... core/qr_handler.i
 	@echo ... core/qr_handler.s
+	@echo ... core/qrcodegen/UserInputs.obj
+	@echo ... core/qrcodegen/UserInputs.i
+	@echo ... core/qrcodegen/UserInputs.s
 	@echo ... core/qrcodegen/qrcodegen.obj
 	@echo ... core/qrcodegen/qrcodegen.i
 	@echo ... core/qrcodegen/qrcodegen.s
