@@ -9,18 +9,13 @@ using namespace qrcodegen;
 
 
 
-string text;
-//string SavePath;
-string UserFileName;
 
 int main() {
 
 
+UserInputs::UserTextToConvertInit();
 
-    cout<<"Enter text or link : ";
-    cin>>text;
-
-    QrCode qr = QrCode::encodeText(text.c_str(), QrCode::Ecc::LOW);
+    QrCode qr = QrCode::encodeText(UserInputs::GetUserTextToConvert().c_str(), QrCode::Ecc::LOW);
     int size = qr.getSize();
 
 
@@ -43,13 +38,12 @@ int main() {
         }
     }
 
-    UserInputs::PathInit();
+    UserInputs::UserPathInit();
 
-    cout<<"Enter FileName :";
-    cin>>UserFileName;
+    UserInputs::UserFileNameInit();
 
-    cv::imwrite(UserInputs::GetUserPathInput()+ "/" + UserFileName + ".png", img);
-    cout << "save as "+UserFileName + " in " + UserInputs::GetUserPathInput()  << endl;
+    cv::imwrite(UserInputs::GetUserPathInput()+ "/" + UserInputs::GetUserFileName() + ".png", img);
+    cout << "save as "+ UserInputs::GetUserFileName() + " in " + UserInputs::GetUserPathInput()  << endl;
    system("pause");
 
     return 0;
