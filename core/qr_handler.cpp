@@ -10,7 +10,7 @@ using namespace qrcodegen;
 
 
 
-int main() {
+void generateQrPng() {
 
 
 UserInputs::UserTextToConvertInit();
@@ -44,7 +44,5 @@ UserInputs::UserTextToConvertInit();
 
     cv::imwrite(UserInputs::GetUserPathInput()+ "/" + UserInputs::GetUserFileName() + ".png", img);
     cout << "save as "+ UserInputs::GetUserFileName() + " in " + UserInputs::GetUserPathInput()  << endl;
-   system("pause");
 
-    return 0;
 }
