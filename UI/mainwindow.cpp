@@ -1,15 +1,16 @@
 #include "mainwindow.h"
-#include "mainwindow.ui"
+#include "ui_mainwindow.h"
 #include "qrcodegen/UserInputs.h"
-#include "QPixmap"
+#include <QPixmap>
+#include "qr_handler.h"
 
 
 
 
 
-QString PathToImage = QString::fromStdString(UserInputs::GetUserPathInput()+ "/" + UserInputs::GetUserFileName() + ".png");
+/*QString PathToImage = QString::fromStdString(UserInputs::GetUserPathInput()+ "/" + UserInputs::GetUserFileName() + ".png");
 
-QPixmap pix(PathToImage);
+QPixmap pix(PathToImage);*/
 
 
 

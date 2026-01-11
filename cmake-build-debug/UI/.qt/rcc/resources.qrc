@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/images">
-    <file alias="cmake-build-debug/qr_output.png">X:/Programing/QRGenerator_diploma_/UI/cmake-build-debug/qr_output.png</file>
-  </qresource>
-</RCC>
-

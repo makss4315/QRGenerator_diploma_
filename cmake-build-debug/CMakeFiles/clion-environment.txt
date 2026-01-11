@@ -1,5 +1,0 @@
-ToolSet: 17.0 (local)@X:\hyinia_dla_msvs
-Ninja: 1.12.1@X:\Leonchik\CLion 2024.3.2\bin\ninja\win\x64\ninja.exe
-Options: 
-
-Options:-DCMAKE_TOOLCHAIN_FILE=X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake

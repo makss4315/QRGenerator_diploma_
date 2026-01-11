@@ -1,5 +1,0 @@
-"X:\Leonchik\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=X:/Git_Repo/vcpkg/scripts/buildsystems/vcpkg.cmake -G "NMake Makefiles" -S X:\Programing\QRGenerator_diploma_ -B X:\Programing\QRGenerator_diploma_\cmake-build-debug
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Configuring done (0.8s)
--- Generating done (0.2s)
--- Build files have been written to: X:/Programing/QRGenerator_diploma_/cmake-build-debug

@@ -15,6 +15,7 @@ public:
     ~MainWindow();
 
 private:
+    void on_pushButton_clicked();
     Ui::MainWindow *ui;
 };
 

@@ -3,10 +3,11 @@ cmake_minimum_required(VERSION 3.16)
 project(QRGeneratorUI)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 COMPONENTS Widgets Gui Core REQUIRED)
 
-qt_wrap_ui(UI_HEADERS mainwindow.ui)
+
 
 add_executable(QRGenerator
         qr_handler.cpp
