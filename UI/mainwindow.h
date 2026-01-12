@@ -2,9 +2,11 @@
 
 #include <QMainWindow>
 
+QT_BEGIN_NAMESPACE
 namespace Ui {
-class MainWindow;
+    class MainWindow;
 }
+QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
@@ -14,8 +16,9 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    private slots:
+        void on_pushButton_clicked();
+
 private:
-    void on_pushButton_clicked();
     Ui::MainWindow *ui;
 };
-

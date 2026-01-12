@@ -1,16 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "qrcodegen/UserInputs.h"
 #include <QPixmap>
 #include "qr_handler.h"
 
 
 
-
-
-/*QString PathToImage = QString::fromStdString(UserInputs::GetUserPathInput()+ "/" + UserInputs::GetUserFileName() + ".png");
-
-QPixmap pix(PathToImage);*/
 
 
 
@@ -28,4 +22,31 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+void MainWindow::on_pushButton_clicked()
+{
+    QString text = ui->textEdit->toPlainText();
+
+    if (text.isEmpty())
+        return;
+
+    QString filePath = "text.png";
+
+    generateQrPng(
+        text.toStdString(),
+        filePath.toStdString()
+    );
+
+    QPixmap pixmap(filePath);
+
+    if (pixmap.isNull()) {
+        return;
+    }
+
+    ui->label->setPixmap(
+        pixmap.scaled(
+            ui->label->size(),
+            Qt::KeepAspectRatio,
+            Qt::SmoothTransformation)
+            );
 }
