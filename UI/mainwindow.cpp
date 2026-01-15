@@ -2,6 +2,8 @@
 #include "ui_mainwindow.h"
 #include <QPixmap>
 #include "qr_handler.h"
+#include "QFileDialog"
+#include "QMessageBox"
 
 
 
@@ -23,23 +25,47 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-void MainWindow::on_pushButton_clicked()
+
+void MainWindow::on_saveButton_clicked(){
+    if (ui->label->pixmap().isNull()) {
+        QMessageBox::warning(this, "Error","no QR to save");
+        return;
+    }
+
+    QString filePath = QFileDialog::getSaveFileName(
+    this,
+    "Save QR-Code",
+    "",
+    "PNG Image (*.png)"
+    );
+
+    if (filePath.isEmpty()) {
+        return;
+    };
+
+    ui->label->pixmap().save(filePath, "png");
+}
+
+void MainWindow::on_generateButton_clicked()
 {
     QString text = ui->textEdit->toPlainText();
 
-    if (text.isEmpty())
+    if (text.isEmpty()) {
+        QMessageBox::warning(this, "Error", "No text to QR");
         return;
+    }
 
-    QString filePath = "text.png";
+    QString tempPath = QDir::tempPath()+ "/qr_temp.png";
 
     generateQrPng(
         text.toStdString(),
-        filePath.toStdString()
+        tempPath.toStdString()
     );
 
-    QPixmap pixmap(filePath);
+    QPixmap pixmap(tempPath);
 
     if (pixmap.isNull()) {
+        QMessageBox::warning(this, "Error", "Can not load QR-code");
         return;
     }
 
@@ -50,3 +76,4 @@ void MainWindow::on_pushButton_clicked()
             Qt::SmoothTransformation)
             );
 }
+
