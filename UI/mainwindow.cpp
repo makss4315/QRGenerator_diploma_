@@ -18,13 +18,34 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
+    ui->sideBar->move(-ui->sideBar->width(), 0);
 }
 
 
-MainWindow::~MainWindow()
+void MainWindow::on_historyButton_clicked()
 {
-    delete ui;
+    QMessageBox::information(this, "История", "Тут будет история QR-кодов");
 }
+
+void MainWindow::on_settingsButton_clicked()
+{
+    QMessageBox::information(this, "Настройки", "Тут будут настройки");
+}
+
+
+void MainWindow::on_menuButton_clicked()
+{
+    int targetX = (ui->sideBar->x() < 0)
+        ? ui->menuButton->width()
+        : -ui->sideBar->width();
+
+    ui->sideBar->move(targetX, 0);
+}
+
+
+
 
 void MainWindow::on_saveButton_clicked(){
     if (ui->label->pixmap().isNull()) {
@@ -77,3 +98,9 @@ void MainWindow::on_generateButton_clicked()
             );
 }
 
+
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
