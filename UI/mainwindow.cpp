@@ -7,6 +7,13 @@
 #include <QDateTime>
 #include <QDir>
 
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QFile>
+#include <QStandardPaths>
+
+
 #include "qr_handler.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -14,6 +21,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    //history bar animation
 
     historyDock = new QDockWidget("History", this);
     historyDock->setAllowedAreas(Qt::BottomDockWidgetArea);
@@ -30,22 +39,28 @@ MainWindow::MainWindow(QWidget *parent)
     connect(historyList, &QListWidget::itemClicked,
             this, &MainWindow::onHistoryItemClicked);
 
-    // ===== Sidebar animation =====
+    //  Sidebar animation
     int topOffset = ui->menuButton->height();
     ui->sideBar->move(-ui->sideBar->width(), topOffset);
 
     sideBarAnim = new QPropertyAnimation(ui->sideBar, "pos", this);
     sideBarAnim->setDuration(250);
     sideBarAnim->setEasingCurve(QEasingCurve::OutCubic);
+
+
+    loadHistoryFromFile();
+
+
 }
 
 MainWindow::~MainWindow()
 {
+    saveHistoryToFile();
     delete ui;
 }
 
 
-void MainWindow::on_menuButton_clicked()
+void MainWindow::on_menuButton_clicked()    //"hamburger" button
 {
     int topOffset = ui->menuButton->height();
     QPoint startPos = ui->sideBar->pos();
@@ -70,7 +85,7 @@ void MainWindow::on_historyButton_clicked()
         historyDock->setFixedHeight(0);
         historyDock->show();
 
-        QPropertyAnimation* anim =
+        QPropertyAnimation* anim =                      //logic for history animation dock widget
             new QPropertyAnimation(historyDock, "maximumHeight");
         anim->setDuration(250);
         anim->setStartValue(0);
@@ -112,7 +127,7 @@ void MainWindow::on_saveButton_clicked()
     if (filePath.isEmpty())
         return;
 
-    ui->label->pixmap().save(filePath, "PNG");
+    ui->label->pixmap().save(filePath, "PNG");       //save as button
 }
 
 
@@ -125,12 +140,12 @@ void MainWindow::on_generateButton_clicked()
         return;
     }
 
-    QString filePath =
+    QString filePath =            //create temp file for save qr
         QDir::tempPath() + "/qr_" +
-        QString::number(QDateTime::currentMSecsSinceEpoch()) +
+        QString::number(QDateTime::currentMSecsSinceEpoch()) +  //base trick with time if we need different values
         ".png";
 
-    generateQrPng(
+    generateQrPng(              //give our inputs in QR generator
         text.toStdString(),
         filePath.toStdString()
     );
@@ -152,7 +167,7 @@ void MainWindow::on_generateButton_clicked()
 }
 
 
-void MainWindow::addToHistory(const QString& name, const QString& path)
+void MainWindow::addToHistory(const QString& name, const QString& path)     //save to history logic
 {
     QPixmap icon(path);
 
@@ -164,8 +179,11 @@ void MainWindow::addToHistory(const QString& name, const QString& path)
     item->setData(Qt::UserRole, path);
     historyList->insertItem(0, item);
 
-    if (historyList->count() > 10)
+    if (historyList->count() > 10)              //max 10 values in history
         delete historyList->takeItem(10);
+
+    saveHistoryToFile();
+
 }
 
 void MainWindow::onHistoryItemClicked(QListWidgetItem* item)
@@ -182,4 +200,68 @@ void MainWindow::onHistoryItemClicked(QListWidgetItem* item)
             Qt::KeepAspectRatio,
             Qt::SmoothTransformation)
     );
+}
+
+QString getHistoryFilePath()
+{
+    QString dir =
+        QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+
+    QDir().mkpath(dir);
+
+    return dir + "/history.json";
+}
+
+void MainWindow::saveHistoryToFile() {
+    QJsonArray array;
+    for (int i= 0; i<historyList->count(); ++i) {
+        QListWidgetItem* item = historyList->item(i);
+
+        QJsonObject obj;
+        obj["text"] = item->text();
+        obj["filePath"] = item->data(Qt::UserRole).toString();
+
+        array.append(obj);
+    }
+
+    QJsonDocument doc(array);
+
+    QFile file(getHistoryFilePath());
+    if (file.open(QIODevice::WriteOnly)) {
+        file.write(doc.toJson(QJsonDocument::Indented));
+        file.close();
+    }
+}
+
+void MainWindow::loadHistoryFromFile() {
+    QFile file(getHistoryFilePath());
+    if (!file.open(QIODevice::ReadOnly)) {
+        return;
+    }
+    QJsonDocument doc = QJsonDocument::fromJson(file.readAll());
+    file.close();
+
+if (!doc.isArray()) {
+    return;
+}
+    QJsonArray array = doc.array();
+
+    for (const QJsonValue& val : array) {
+        QJsonObject obj = val.toObject();
+
+        QString text = obj["text"].toString();
+        QString Path = obj["filePath"].toString();
+
+        if (!QFile::exists(Path)) {
+            continue;
+        }
+        QPixmap icon(Path);
+        QListWidgetItem* item = new QListWidgetItem(
+           QIcon(icon.scaled(64, 64, Qt::KeepAspectRatio, Qt::SmoothTransformation)),text);
+
+
+        item->setData(Qt::UserRole, Path);
+        historyList->insertItem(0, item);
+    }
+
 }

@@ -30,11 +30,15 @@ public:
 
         void on_menuButton_clicked();
 
-        void on_historyButton_clicked();
-
         void on_settingsButton_clicked();
 
+        void on_historyButton_clicked();
+
         void onHistoryItemClicked(QListWidgetItem* item);
+
+        void saveHistoryToFile();
+
+        void loadHistoryFromFile();
 
 
 

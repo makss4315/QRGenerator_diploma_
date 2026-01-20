@@ -4,7 +4,7 @@
 
 using namespace qrcodegen;
 
-void generateQrPng(
+void generateQrPng(         //its need to give QR in UI
     const std::string& text,
     const std::string& outputPath
 )

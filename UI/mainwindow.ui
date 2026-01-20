@@ -104,8 +104,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <rect>
       <x>-200</x>
       <y>0</y>
-      <width>121</width>
-      <height>201</height>
+      <width>61</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -121,13 +121,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>12</x>
-       <y>12</y>
-       <width>65</width>
-       <height>161</height>
+       <x>10</x>
+       <y>10</y>
+       <width>41</width>
+       <height>89</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
