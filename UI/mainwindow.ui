@@ -49,6 +49,19 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: transparent;
+    border: none;
+    color: #dddddd;
+    font-size: 18px;
+}
+
+QPushButton:hover {
+    background-color: #2a2a2a;
+}
+</string>
+    </property>
     <property name="text">
      <string>☰</string>
     </property>
@@ -63,7 +76,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>LabelImage</string>
+     <string/>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit">
@@ -91,9 +104,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <rect>
       <x>-200</x>
       <y>0</y>
-      <width>104</width>
-      <height>89</height>
+      <width>121</width>
+      <height>201</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#sideBar {
+    background-color: #1e1e1e;
+    border-right: 1px solid #2d2d2d;
+}
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -101,22 +121,66 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QPushButton" name="historyButton">
-       <property name="text">
-        <string>his</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="settingsButton">
-       <property name="text">
-        <string>set</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>12</y>
+       <width>65</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="historyButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #dddddd;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+QPushButton:hover {
+    background-color: #2a2a2a;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::DocumentOpenRecent"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="settingsButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    color: #dddddd;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+QPushButton:hover {
+    background-color: #2a2a2a;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset theme="QIcon::ThemeIcon::DocumentProperties"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

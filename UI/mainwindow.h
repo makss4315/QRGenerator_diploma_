@@ -3,6 +3,11 @@
 #include <QMainWindow>
 #include  <QDockWidget>
 #include <QListWidget>
+#include <QPropertyAnimation>
+#include <QStringList>
+
+
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,8 +34,16 @@ public:
 
         void on_settingsButton_clicked();
 
+        void onHistoryItemClicked(QListWidgetItem* item);
+
 
 
 private:
+    QPropertyAnimation* sideBarAnim;
+    QDockWidget* historyDock;
+    QListWidget* historyList;
+
+    void addToHistory(const QString& name, const QString& path);
+
     Ui::MainWindow *ui;
 };
