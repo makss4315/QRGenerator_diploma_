@@ -112,8 +112,8 @@ void MainWindow::on_historyButton_clicked()
 
 void MainWindow::on_settingsButton_clicked()
 {
-    QMessageBox::information(this, "Настройки",
-                             "Настройки будут добавлены позже");
+    QMessageBox::information(this, "Settings",
+                             "Settings can be added soon");
 }
 
 void MainWindow::on_saveButton_clicked()

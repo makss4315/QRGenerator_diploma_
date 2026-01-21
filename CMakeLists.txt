@@ -25,7 +25,6 @@ add_executable(QRGenerator
         core/qr_handler.cpp
         core/qr_handler.h
         core/qrcodegen/qrcodegen.cpp
-        core/qrcodegen/UserInputs.cpp
 )
 
 # ---------- Includes ----------
