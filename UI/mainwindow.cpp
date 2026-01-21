@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <opencv2/opencv.hpp>
+
+
 #include <QPixmap>
 #include <QFileDialog>
 #include <QMessageBox>
@@ -21,6 +24,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    this->setFixedSize(this->size());           //lock window size - but its still dynamic for new  QT component
+    this->setWindowFlags(this->windowFlags() & ~Qt::WindowMaximizeButtonHint);
 
     //history bar animation
 
@@ -264,4 +270,40 @@ if (!doc.isArray()) {
         historyList->insertItem(0, item);
     }
 
+}
+
+void MainWindow::on_decodeButton_clicked()
+{
+    QString filePath = QFileDialog::getOpenFileName(
+        this,
+        "Open QR image",
+        "",
+        "Images (*.png *.jpg *.jpeg)"
+    );
+
+    if (filePath.isEmpty())
+        return;
+
+    cv::Mat img = cv::imread(filePath.toStdString());
+    if (img.empty()) {
+        QMessageBox::warning(this, "Error", "Cannot open image");
+        return;
+    }
+
+    cv::QRCodeDetector detector;
+    std::string decodedText = detector.detectAndDecode(img);
+
+    if (decodedText.empty()) {
+        QMessageBox::warning(this, "Result", "QR code not found");
+        return;
+    }
+
+    // show text in UI
+    ui->textEdit->setPlainText(QString::fromStdString(decodedText));
+
+    QMessageBox::information(
+        this,
+        "QR decoded",
+        "QR code successfully decoded"
+    );
 }

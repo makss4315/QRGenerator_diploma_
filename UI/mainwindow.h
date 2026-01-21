@@ -30,6 +30,8 @@ public:
 
         void on_menuButton_clicked();
 
+        void on_decodeButton_clicked();
+
         void on_settingsButton_clicked();
 
         void on_historyButton_clicked();

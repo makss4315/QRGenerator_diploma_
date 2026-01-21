@@ -30,7 +30,7 @@
    <widget class="QPushButton" name="generateButton">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>460</x>
       <y>10</y>
       <width>111</width>
       <height>51</height>
@@ -126,7 +126,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>41</width>
+       <width>46</width>
        <height>89</height>
       </rect>
      </property>
@@ -181,6 +181,19 @@ QPushButton:hover {
       </item>
      </layout>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="decodeButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Decode</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
