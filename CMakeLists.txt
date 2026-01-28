@@ -16,7 +16,7 @@ set(OpenCV_INCLUDE_DIR "${OpenCV_ROOT}/include")
 set(OpenCV_LIB_DIR     "${OpenCV_ROOT}/x64/mingw/lib")
 
 # ---------- Executable ----------
-add_executable(QRGenerator
+add_executable(QRGenerator  WIN32
         UI/main.cpp
         UI/mainwindow.cpp
         UI/mainwindow.h
@@ -27,7 +27,6 @@ add_executable(QRGenerator
         core/qrcodegen/qrcodegen.cpp
 )
 
-# ---------- Includes ----------
 target_include_directories(QRGenerator PRIVATE
         ${OpenCV_INCLUDE_DIR}
         UI

@@ -6,8 +6,6 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    MainWindow w;
-    w.show();
 
 
     QFile styleFile("style.qss");
@@ -17,6 +15,8 @@ int main(int argc, char *argv[])
         styleFile.close();
     }
 
+ MainWindow w;
+    w.show();
 
     return app.exec();
 }
