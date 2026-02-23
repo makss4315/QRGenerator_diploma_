@@ -31,7 +31,6 @@ This project is a desktop application for generating QR codes, implemented in C+
 
 - UI/ -> Graphical user interface components
 - core/ -> Core QR generation logic
-- release/ -> Compiled release files
 - CMakeLists.txt -> Build configuration
 
 
